@@ -11,3 +11,13 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags:
 Text Domain: block-theme
 */
+
+.home-top-menu .wp-block-button__link {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-top-menu .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--background);
+    transform: scale(1.05);
+}
