@@ -1,0 +1,31 @@
+.team-section .liquid-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40% 60% 70% 30% / 30% 40% 60% 70%;
+}
+
+.wt-carousel {
+    position: relative;
+}
+
+.wt-carousel figure {
+    display: none;
+    margin: 0;
+}
+
+.wt-carousel figure.active {
+    display: block;
+}
+
+.wt-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.wt-carousel figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
