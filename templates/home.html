@@ -1,5 +1,7 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
+<div class="hero-banner"></div>
+
 <!-- wp:group {"align":"wide","className":"home-top-menu"} -->
 <div class="wp-block-group alignwide home-top-menu">
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -51,5 +53,21 @@
 	<!-- wp:pattern {"slug":"block-theme/call-to-action"} /-->
 </main>
 <!-- /wp:group -->
+
+<div id="promo-popup" class="promo-popup">
+    <span>25% off for your SEO boost!</span>
+    <button id="promo-close">×</button>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('promo-popup');
+    const close = document.getElementById('promo-close');
+    const timer = setTimeout(() => popup.style.display = 'none', 5000);
+    close.addEventListener('click', function() {
+        popup.style.display = 'none';
+        clearTimeout(timer);
+    });
+});
+</script>
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

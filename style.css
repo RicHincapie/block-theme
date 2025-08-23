@@ -14,10 +14,47 @@ Text Domain: block-theme
 
 .home-top-menu .wp-block-button__link {
     transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
 }
 
 .home-top-menu .wp-block-button__link:hover {
     background-color: var(--wp--preset--color--primary);
     color: var(--wp--preset--color--background);
     transform: scale(1.05);
+}
+
+.hero-banner {
+    background-image: url('screenshot.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-top-menu,
+main {
+    margin-top: 450px;
+}
+
+.promo-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--wp--preset--color--background, #fff);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.promo-popup button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
