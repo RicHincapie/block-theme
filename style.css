@@ -11,3 +11,29 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags:
 Text Domain: block-theme
 */
+
+.home-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+  animation: scroll-logos 20s linear infinite;
+}
+.logo-carousel img {
+  height: 60px;
+  width: auto;
+  flex-shrink: 0;
+}
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
