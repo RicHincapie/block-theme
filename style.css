@@ -56,13 +56,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 75vh;
+    min-height: 80vh;
     color: #ffffff;
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 65vh;
+        min-height: 70vh;
     }
 }
 
