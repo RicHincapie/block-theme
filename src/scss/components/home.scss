@@ -1,16 +1,62 @@
 body {
-        background-color: #ffffff;
-        color: #000000;
+background-color: #ffffff;
+color: #000000;
 }
 
-.wave-border {
-        background-color: #ffffff;
+.hero-section {
+position: relative;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+min-height: 75vh;
+color: #ffffff;
 }
 
-.wave-border svg {
-        width: 100%;
-        height: auto;
-        display: block;
+@media (max-width: 768px) {
+.hero-section {
+min-height: 65vh;
+}
+}
+
+.hero-section::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.3);
+z-index: 0;
+}
+
+.hero-section .hero-content {
+position: relative;
+z-index: 1;
+padding: 0 1rem;
+}
+
+.hero-button .wp-block-button__link {
+background: #E06547;
+color: #ffffff;
+border-radius: 9999px;
+padding: 1rem 2rem;
+transition: background-color 0.3s ease;
+}
+
+.hero-button .wp-block-button__link:hover {
+background: #cc563d;
+}
+
+.hero-wave {
+position: absolute;
+bottom: -1px;
+left: 0;
+width: 100%;
+height: auto;
 }
 
 .icon {
