@@ -12,7 +12,16 @@ Tags:
 Text Domain: block-theme
 */
 
-/* Styles for wave-shaped hero image and feature icons */
+/* Styles for wave-shaped hero image, icons, and logo carousel */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.wave-border {
+    background-color: #ffffff;
+}
+
 .wave-border svg {
     width: 100%;
     height: auto;
@@ -23,8 +32,27 @@ Text Domain: block-theme
     width: 64px;
     height: 64px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: var(--wp--preset--spacing--20);
+    margin: 3cm;
     color: var(--wp--preset--color--primary, #000);
+}
+
+.logo-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo-slide {
+    display: none;
+}
+
+.logo-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-slide.active {
+    display: block;
 }
