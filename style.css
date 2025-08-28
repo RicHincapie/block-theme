@@ -56,13 +56,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 75vh;
+    min-height: 80vh;
     color: #ffffff;
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        min-height: 65vh;
+        min-height: 70vh;
     }
 }
 
@@ -73,7 +73,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.35);
     z-index: 0;
 }
 
@@ -84,15 +84,18 @@ body {
 }
 
 .hero-button .wp-block-button__link {
-    background: #E06547;
-    color: #ffffff;
+    background: #ffffff;
+    color: #E06547;
+    border: none;
     border-radius: 9999px;
     padding: 1rem 2rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: none;
 }
 
 .hero-button .wp-block-button__link:hover {
-    background: #cc563d;
+    background: #E06547;
+    color: #ffffff;
 }
 
 .hero-wave {
