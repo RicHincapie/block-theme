@@ -1,0 +1,26 @@
+.wave-border svg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.logo-carousel {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.logo-slide {
+	display: none;
+}
+
+.logo-slide img {
+	max-width: 100%;
+	height: auto;
+}
+
+.logo-slide.active {
+	display: block;
+}
